@@ -1,7 +1,13 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "123456789:ABCXYZ..."
+TOKEN = "8592484270:AAFI1lFZj3fC6Yu3uHvZzjm6M3GRiCOBu10"
+
+Use this token to access the HTTP API:
+8592484270:AAFI1lFZj3fC6Yu3uHvZzjm6M3GRiCOBu10
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bonjour 👋 Je suis votre chatbot.")
