@@ -1,8 +1,7 @@
-pip install python-telegram-bot
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = "TON_TOKEN_ICI"
+TOKEN = "123456789:ABCXYZ..."
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Bonjour 👋 Je suis votre chatbot.")
@@ -25,4 +24,3 @@ app.add_handler(CommandHandler("start", start))
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, reply))
 
 app.run_polling()
-python bot.py
