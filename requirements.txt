@@ -1,1 +1,1 @@
-python-telegram-chatbot
+python-telegram-bot
